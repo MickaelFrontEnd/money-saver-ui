@@ -1,2 +1,5 @@
 # Prepros configuration, prepros is used to compile the project
 prepros-6.config
+
+# Dist directory, it will be compiled when project is stable
+dist
