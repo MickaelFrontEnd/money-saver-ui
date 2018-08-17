@@ -1,0 +1,36 @@
+.table {
+  border-collapse: collapse;
+  th {
+    background-color: $table-header-color;
+    color: $table-header-text-color;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px;
+    text-align: left;
+  }
+  td {
+    border-bottom: 1px solid $table-header-color;
+    font-size: 13px;
+    padding: 10px;
+    text-align: left;
+    &.right {
+      text-align: right;
+    }
+  }
+}
+
+$themes: primary success warning danger;
+$colors: $primary $success $warning $danger;
+
+@each $theme in $themes {
+  $index: 1;
+  .table.table-#{$theme} {
+    th {
+      background-color: nth($colors,$index); 
+    }
+    td {
+      border-bottom: 1px solid nth($colors,$index);
+    }
+  }
+  $index: $index + 1;
+}
