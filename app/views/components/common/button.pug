@@ -1,0 +1,15 @@
+mixin button(options)
+  - var type = options.type || "button"
+  - var text = options.text || "Button"
+  - var classe = options.classe || ""
+  - var href = options.href || ""
+
+  if type == "button"
+    button.btn(class=classe type="button")=text
+  else if type == "submit"
+    button.btn(class=classe type="submit")=text
+  else if type == "reset"
+    button.btn(class=classe type="reset")=text
+  else if type == "link"
+    a.btn(class=classe href=href)=text
+  

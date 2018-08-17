@@ -1,0 +1,63 @@
+extends ../base/layout.pug
+
+append var
+  - var title = "Money Saver Styleguide"
+
+block content 
+  //- DASHBOARD
+  h2 Dashbord UI
+  .row
+    .col-md-3.col-sm-6.col-xs-12
+      .card-stat.card-stat--primary
+        p.card-stat__title Debit
+        .card-stat__content
+          i.fa.fa-ambulance
+          p.card-stat__value 12 000 Rs
+    .col-md-3.col-sm-6.col-xs-12    
+      .card-stat.card-stat--success
+        p.card-stat__title Credit
+        .card-stat__content
+          i.fa.fa-ambulance
+          p.card-stat__value 4 000 Rs
+    .col-md-3.col-sm-6.col-xs-12
+      .card-stat.card-stat--danger
+        p.card-stat__title Solde
+        .card-stat__content
+          i.fa.fa-ambulance
+          p.card-stat__value 8 000 Rs
+    .col-md-3.col-sm-6.col-xs-12
+      .card-stat.card-stat--warning
+        p.card-stat__title Non souvenue
+        .card-stat__content
+          i.fa.fa-ambulance
+          p.card-stat__value 1 000 Rs
+  
+  //- FORM
+  h2 Form
+  .row
+    .col-md-12.align
+      .form-item
+        label(for="email") Email
+        input(type="text" placeholder="Enter your email here" id="email")
+      .form-item
+        label(for="pwd") Password
+        input(type="password" placeholder="Enter your password here" id="pwd")
+      .form-item
+        label(for="country") Country
+        select(id="country")
+          option Allemagne
+          option Japon
+          option Madagascar
+  
+  //- BUTTON
+  h2 Button
+  .row
+    .col-md-12.align
+      button.btn.btn--primary Primary
+      button.btn.btn--success Success
+      button.btn.btn--danger Danger
+      button.btn.btn--warning Warning
+      button.btn.btn--default Default
+
+  
+      

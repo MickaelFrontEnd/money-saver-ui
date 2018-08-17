@@ -1,0 +1,17 @@
+include ../components/all.pug
+
+doctype html
+html
+  include head.pug
+  body
+    if header
+      block header
+        include header.pug
+    main
+      if menu
+        include menu.pug
+      .wrapper
+        block content 
+    block footer
+      include footer.pug
+    include script.pug

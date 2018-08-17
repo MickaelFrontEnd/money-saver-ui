@@ -1,0 +1,35 @@
+.card-stat {
+  font-weight: 400;
+  margin: 0 5px;
+  padding: 20px;
+  i {
+    color: white;
+  }
+  &__title {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  &__value {
+    color: white;
+    font-size: 25px;
+    text-align: right;
+  }
+  &__content {
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+  }
+  &--primary {
+    background-color: $primary;
+  }
+  &--success {
+    background-color: $success;
+  }
+  &--danger {
+    background-color: $danger;
+  }
+  &--warning {
+    background-color: $warning;
+  }
+}

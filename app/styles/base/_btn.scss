@@ -1,0 +1,36 @@
+.btn {
+  border: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
+  &--primary {
+    background-color: $btn-primary;
+  }
+  &--success {
+    background-color: $btn-success;
+  }
+  &--danger {
+    background-color: $btn-danger;
+  }
+  &--warning {
+    background-color: $btn-warning;
+  }
+  &--default {
+    background-color: $btn-default;
+  }
+  &--block {
+    width: 100%;
+  }
+}
+
+a.btn {
+  display: inline-block;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+mixin formItem(options)
+  - var type = options.type || "text"
+  - var placeholder = options.placeholder || "Placeholder required"
+  - var name = options.name || ""
+  - var id = options.id || ""
+  - var classe = options.classe || ""
+  - var label = options.label || false
+
+  .form-item(class=classe)
+    if label
+      label(for=id) #{label}
+    input(type=type placeholder=placeholder id=id name=name)

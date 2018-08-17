@@ -1,0 +1,13 @@
+
+/* Desktop */
+@mixin respond-to($device) {
+  @if $device=='desktop' {
+    @media only screen and(min-width: $desktop) { @content; }
+  }
+  @else if $device=='tablet' {
+    @media only screen and(min-width: $tablet) and(max-width: $desktop) { @content; }
+  }
+  @else if $device=='phone' {
+    @media only screen and(max-width: $tablet) { @content; }
+  }
+}

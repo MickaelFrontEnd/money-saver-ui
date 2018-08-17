@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+.col-md-3 {
+  @include respond-to('desktop') {
+    width: 25%;
+  }
+}
+
+.col-sm-6 {
+  @include respond-to('tablet') {
+    width: 50%;
+  }
+}
+
+.col-xs-12 {
+  @include respond-to('phone') {
+    width: 100%;
+  }
+}
