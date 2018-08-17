@@ -1,0 +1,25 @@
+.menu {
+  background-color: $menu-color;
+  max-width: $menu-max-width;
+  position: fixed;
+  width: 100%;
+  i {
+    color: $menu-text-color;
+    width: 25px;
+  }
+  li a {
+    border-bottom: 1px solid $menu-border-color;
+    color: $menu-text-color;
+    display: block;
+    font-size: 14px;
+    padding: 20px 0 20px 25px;
+    position: relative;
+    &:hover {
+      background-color: $menu-text-color;
+      color: $menu-color;
+      i {
+        color: $menu-color;
+      }
+    }
+  }
+}

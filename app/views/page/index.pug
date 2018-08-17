@@ -8,31 +8,26 @@ append var
 block content 
   //- DASHBOARD
   h2 Dashbord UI
-  .row(style="margin-bottom: 15px")
-    .col-md-3.col-sm-6.col-xs-12
-      .card-stat.card-stat--primary
-        p.card-stat__title Debit
-        .card-stat__content
-          i.fa.fa-ambulance
-          p.card-stat__value 12 000 Rs
-    .col-md-3.col-sm-6.col-xs-12    
-      .card-stat.card-stat--success
-        p.card-stat__title Credit
-        .card-stat__content
-          i.fa.fa-ambulance
-          p.card-stat__value 4 000 Rs
-    .col-md-3.col-sm-6.col-xs-12
-      .card-stat.card-stat--danger
-        p.card-stat__title Solde
-        .card-stat__content
-          i.fa.fa-ambulance
-          p.card-stat__value 8 000 Rs
-    .col-md-3.col-sm-6.col-xs-12
-      .card-stat.card-stat--warning
-        p.card-stat__title Non souvenue
-        .card-stat__content
-          i.fa.fa-ambulance
-          p.card-stat__value 1 000 Rs
+    .card.card-primary
+      p.card-title Debit
+      .card-content
+        i.fa.fa-ambulance
+        p.card-value 12 000 Rs 
+    .card.card-success
+      p.card-title Debit
+      .card-content
+        i.fa.fa-ambulance
+        p.card-value 12 000 Rs 
+    .card.card-warning
+      p.card-title Debit
+      .card-content
+        i.fa.fa-ambulance
+        p.card-value 12 000 Rs 
+    .card.card-danger
+      p.card-title Debit
+      .card-content
+        i.fa.fa-ambulance
+        p.card-value 12 000 Rs 
   
   //- FORM
   h2 Form
@@ -55,9 +50,9 @@ block content
   h2 Button
   .row.align
     .col-md-12.col-sm-12.col-xs-12
-      button.btn.btn--primary Primary
-      button.btn.btn--success Success
-      button.btn.btn--danger Danger
-      button.btn.btn--warning Warning
-      button.btn.btn--default Default
+      button.btn.btn-primary Primary
+      button.btn.btn-success Success
+      button.btn.btn-danger Danger
+      button.btn.btn-warning Warning
+      button.btn.btn-default Default
   

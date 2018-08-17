@@ -7,26 +7,26 @@
   outline: none;
   padding: 10px;
   text-transform: uppercase;
-  &:hover {
-    cursor: pointer;
-  }
-  &--primary {
+  &-primary {
     background-color: $btn-primary;
   }
-  &--success {
+  &-success {
     background-color: $btn-success;
   }
-  &--danger {
+  &-danger {
     background-color: $btn-danger;
   }
-  &--warning {
+  &-warning {
     background-color: $btn-warning;
   }
-  &--default {
+  &-default {
     background-color: $btn-default;
   }
-  &--block {
+  &-block {
     width: 100%;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 

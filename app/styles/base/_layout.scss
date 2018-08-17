@@ -18,6 +18,10 @@ main {
   display: flex;
 }
 
+li {
+  list-style: none;
+}
+
 .wrapper {
   height: 100%;
   min-height: 100vh;
@@ -26,20 +30,3 @@ main {
   width: 100%;
 }
 
-.full {
-  width: 100%;
-}
-
-.sticky {
-  left: 0;
-  position: fixed;
-  top: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.align {
-  padding-left: 5px;
-}
