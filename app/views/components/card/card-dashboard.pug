@@ -1,0 +1,12 @@
+mixin card-dashboard(options)
+  - var title = options.title ||""
+  - var icon = options.icon || ""
+  - var value = options.value || ""
+  - var classe = options.classe || "" 
+  - var theme = options.theme || "primary"
+  
+  .card-dashboard.card-primary(class = classe + " card-" + theme)
+        p.card-dashboard-title #{title}
+        .card-dashboard-content
+          i.fa(class = "fa-" + icon)
+          p.card-dashboard-value #{value} 

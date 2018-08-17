@@ -1,23 +1,25 @@
 .card {
-  font-weight: 400;
-  padding: 20px;
-  i {
-    color: white;
-  }
-  &-title {
-    color: white;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  &-value {
-    color: white;
-    font-size: 25px;
-    text-align: right;
-  }
-  &-content {
-    align-items: center;
-    display:flex;
-    justify-content: space-between;
+  &-dashboard {
+    font-weight: 400;
+    padding: 20px;
+    i {
+      color: white;
+    }
+    &-title {
+      color: white;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    &-value {
+      color: white;
+      font-size: 25px;
+      text-align: right;
+    }
+    &-content {
+      align-items: center;
+      display:flex;
+      justify-content: space-between;
+    }
   }
   &-primary {
     background-color: $primary;

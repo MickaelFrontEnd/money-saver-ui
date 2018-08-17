@@ -8,27 +8,32 @@ append var
 block content 
   //- DASHBOARD
   h2 Dashbord UI
-    .card.card-primary
-      p.card-title Debit
-      .card-content
-        i.fa.fa-ambulance
-        p.card-value 12 000 Rs 
-    .card.card-success
-      p.card-title Debit
-      .card-content
-        i.fa.fa-ambulance
-        p.card-value 12 000 Rs 
-    .card.card-warning
-      p.card-title Debit
-      .card-content
-        i.fa.fa-ambulance
-        p.card-value 12 000 Rs 
-    .card.card-danger
-      p.card-title Debit
-      .card-content
-        i.fa.fa-ambulance
-        p.card-value 12 000 Rs 
-  
+    .card-dashboard-container
+      +card-dashboard({
+        title: "Debit",
+        icon: "ambulance",
+        value: "12 000 Rs",
+        theme: "primary"
+      })
+      +card-dashboard({
+        title: "Debit",
+        icon: "ambulance",
+        value: "12 000 Rs",
+        theme: "primary"
+      })
+      +card-dashboard({
+        title: "Debit",
+        icon: "ambulance",
+        value: "12 000 Rs",
+        theme: "primary"
+      })
+      +card-dashboard({
+        title: "Debit",
+        icon: "ambulance",
+        value: "12 000 Rs",
+        theme: "primary"
+      })
+    
   //- FORM
   h2 Form
   .row.align

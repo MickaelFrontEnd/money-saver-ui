@@ -1,0 +1,16 @@
+.card-dashboard-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .card-dashboard {
+    flex-basis: calc((100% / 4) - 10px);
+    margin: 5px;
+    @include respond-to('tablet') {
+      flex-basis: calc(50% - 10px);
+    }
+    @include respond-to('phone') {
+      flex-basis: 100%;
+      margin: 10px 0;
+    }
+  }
+}
