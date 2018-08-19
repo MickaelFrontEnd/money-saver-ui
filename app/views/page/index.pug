@@ -36,32 +36,46 @@ block content
     
   //- FORM
   h2 Form
-  .row.align
-    .col-md-12.col-sm-12.col-xs-12
-      .form-item
-        label(for="email") Email
-        input(type="text" placeholder="Enter your email here" id="email")
-      .form-item
-        label(for="pwd") Password
-        input(type="password" placeholder="Enter your password here" id="pwd")
-      .form-item
-        label(for="country") Country
-        select(id="country")
-          option Allemagne
-          option Japon
-          option Madagascar
+  .form-item
+    label(for="email") Email
+    input(type="text" placeholder="Enter your email here" id="email")
+  .form-item
+    label(for="pwd") Password
+    input(type="password" placeholder="Enter your password here" id="pwd")
+  .form-item
+    label(for="country") Country
+    select(id="country")
+      option Allemagne
+      option Japon
+      option Madagascar
+  .form-item
+    p.label Radio
+    .form-choice
+      input(type="radio" id="radio-1" name="radio" checked)
+      label(for="radio-1") Radio 1
+    .form-choice
+      input(type="radio" id="radio-2" name="radio")
+      label(for="radio-2") Radio 2
+  .form-item 
+    p.label Checkbox
+    .form-choice
+      input(type="checkbox" id="checkbox-1" name="checkbox" checked)
+      label(for="checkbox-1") checkbox 1
+    .form-choice
+      input(type="checkbox" id="checkbox-2" name="checkbox")
+      label(for="checkbox-2") checkbox 2
+
   
   //- BUTTON
   h2 Button
-  .row.align
-    .col-md-12.col-sm-12.col-xs-12
-      button.btn.btn-primary Primary
-      button.btn.btn-success Success
-      button.btn.btn-danger Danger
-      button.btn.btn-warning Warning
-      button.btn.btn-default Default
+  button.btn.btn-primary Primary
+  button.btn.btn-success Success
+  button.btn.btn-danger Danger
+  button.btn.btn-warning Warning
+  button.btn.btn-default Default
   
   //- TABLE
+  h2 Table
   table.table.full
     tr
       th Header 1

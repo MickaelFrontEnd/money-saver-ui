@@ -18,19 +18,3 @@
     }
   }
 }
-
-$themes: primary success warning danger;
-$colors: $primary $success $warning $danger;
-
-@each $theme in $themes {
-  $index: 1;
-  .table.table-#{$theme} {
-    th {
-      background-color: nth($colors,$index); 
-    }
-    td {
-      border-bottom: 1px solid nth($colors,$index);
-    }
-  }
-  $index: $index + 1;
-}

@@ -7,7 +7,7 @@
   }
 }
 
-label {
+label, .label {
   color: $primary-text-color;
   display: block;
   margin-bottom: 5px;
@@ -25,4 +25,40 @@ select {
 
 input:focus, select:focus {
   outline: 1px solid $form-outline;
+}
+
+.form-choice {
+  display: inline-block;
+  margin-right: 20px;
+  label {
+    display: inline-block;
+    padding-left: 22px;
+    position: relative;
+    &:before, &:after {
+      background-color: $form-choice-background;
+      content: "";
+      display: block;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+    }
+    &:after {
+      background-color: $primary;
+      transition: all 0.3s ease;
+      transform: scale(0);
+    }
+  }
+  input {
+    display: none;
+    &:checked + label:after {
+      transform: scale(1);
+    }
+    &[type="radio"] + label {
+      &:before, &:after {
+        border-radius: 8px;
+      }
+    }
+  }
 }

@@ -1,0 +1,23 @@
+$themes: primary success warning danger;
+$colors: $primary $success $warning $danger;
+
+@for $index from 1 through 4 {
+
+  .radio.radio-#{nth($themes,$index)} {
+    label {
+      &:after {
+        background-color: nth($colors,$index);
+      }
+    }
+  }
+
+  .table.table-#{nth($themes,$index)} {
+    th {
+      background-color: nth($colors,$index); 
+    }
+    td {
+      border-bottom: $index solid nth($colors,$index);
+    }
+  }
+
+}
