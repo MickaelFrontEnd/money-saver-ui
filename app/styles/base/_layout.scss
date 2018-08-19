@@ -10,7 +10,7 @@ body, html, main, aside {
   height: 100%;
 }
 
-body {
+body:not(.no-padding) {
   padding-top: 70px;
 }
  

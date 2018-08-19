@@ -1,37 +1,42 @@
-extends ../base/layout.pug
+include ../components/all.pug
 
 append var
   - var title = "Money Saver Login"
-  - var header = false
 
-block content 
-  .login-wrapper
-    .card-login
-      h1.card-login__title Money Saver
-      form(action="#" method="POST")
-        +formItem({
-          type: "text",
-          name: "login",
-          placeholder: "Enter your login",
-          label: "Login*",
-          classe: "full"
-        })
-        +formItem({
-          type: "password",
-          name: "pwd",
-          placeholder: "Enter your password",
-          label: "Password*",
-          classe: "full"
-        })
-        +button({
-          type: "submit",
-          text: "Sign in",
-          classe: "btn--success full"
-        })
-        +button({
-          type: "link",
-          text: "Sign up",
-          classe: "btn--primary full",
-        })
-        p.question
-          a(href="#") Forgot password?
+doctype html
+html
+  include ../base/head.pug
+  body.no-padding
+    .login-wrapper
+      .card-login
+        h1.card-login__title Money Saver
+        form(action="#" method="POST")
+          +formItem({
+            type: "text",
+            name: "login",
+            placeholder: "Enter your login",
+            label: "Login*",
+            classe: "full"
+          })
+          +formItem({
+            type: "password",
+            name: "pwd",
+            placeholder: "Enter your password",
+            label: "Password*",
+            classe: "full"
+          })
+          +button({
+            type: "submit",
+            text: "Sign in",
+            classe: "btn-success full"
+          })
+          +button({
+            type: "link",
+            text: "Sign up",
+            classe: "btn-primary full",
+          })
+          p.question
+            a(href="#") Forgot password?
+    include ../base/script.pug
+
+  
