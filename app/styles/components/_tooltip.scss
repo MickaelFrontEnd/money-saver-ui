@@ -1,0 +1,16 @@
+.tooltip {
+  color: white;
+  padding: 20px;
+  &.info {
+    background-color: $primary;
+  }
+  &.success {
+    background-color: $success;
+  }
+  &.warning {
+    background-color: $warning;
+  }
+  &.danger {
+    background-color: $danger;
+  }
+}

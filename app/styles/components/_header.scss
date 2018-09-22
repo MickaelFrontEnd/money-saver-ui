@@ -10,6 +10,7 @@ $menu-max-width: 280px;
   &-top {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
     &-left {
       align-items: center;
       background-color: $menu-color;
@@ -20,13 +21,14 @@ $menu-max-width: 280px;
       width: 100%;
     }
     &-right {
-      background-color: white;
+      background-color: $menu-color;
       box-shadow:0 1px 5px grey;
+      color: $menu-text-color;
       text-align: right;
       width: 100%;
       li {
         align-items: center;
-        display: inline-flex; 
+        display: inline-flex;
         margin-right: 10px;
         &:last-child {
           margin-right: 0;
@@ -41,7 +43,6 @@ $menu-max-width: 280px;
 
 .profil {
   align-items: center;
-  color: $secondary-text-color;
   display: inline-flex;
   &-img {
     border-radius: 15px;
